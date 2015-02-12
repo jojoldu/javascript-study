@@ -1,1 +1,3 @@
-console.log("ㅎㅇ");
+function showMessage(){
+	alert("안녕하세요");
+}
