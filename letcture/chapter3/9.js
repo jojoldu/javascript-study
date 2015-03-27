@@ -1,22 +1,17 @@
 /**
-	콜백함수
+	3.9 콜백함수
 **/
-function alram(min, callback){
-	var isCall = false;
-	
-	setInterval(function(){
-		var date = new Date();
-		var nowMin = date.getMinutes();
+var count = 1;
 
-		if(nowMin === min && !isCall){
-			isCall = true;
-			callback(nowMin);
-		}
-	}, 1000);
-}
+function sayHello(){
+	console.log("Hello?", count);
+	count++;
+};
 
-onload = function(){
-	alram(15, function(min){
-		console.log("현재 Minutes는 " + min +" 입니다.");
-	});
+
+var a=1;
+function aa(){
+	a=2;
 }
+aa();
+console.log(a);
