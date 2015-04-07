@@ -8,10 +8,3 @@ function sayHello(){
 	count++;
 };
 
-
-var a=1;
-function aa(){
-	a=2;
-}
-aa();
-console.log(a);
