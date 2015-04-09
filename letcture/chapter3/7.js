@@ -37,3 +37,11 @@ function returnFunction(name){
 };
 
 returnFunction("이동욱")();
+
+
+function print(){
+	console.log("출력1");
+};
+
+callFunction(print);
+
