@@ -10,22 +10,11 @@
 **/
 
 //1. 기본적인 클로저 예제
-function makeFunc() {
-  var name = "Led Dong Uk";
-
-  function displayName() {
-    console.log(name);
-  }
-
-  return displayName;
-}
-
-var myFunc = makeFunc();
-myFunc();
 
 
 //2. 클로저 비사용 vs 사용
 console.log("클로저 비사용시");
+
 function notUseClosure(x){
 	var num = 0;
 
@@ -44,6 +33,7 @@ notUseClosure(0);
 
 
 console.log("클로저 사용시");
+
 function useClosure(x){
 	var num = 0;
 
@@ -58,20 +48,3 @@ var useClosure1 = useClosure(0);
 useClosure1();
 useClosure1();
 useClosure1();
-
-
-// function HelloFunc(func){
-// 	this.greeting = "hello";
-// };
-
-// HelloFunc.prototype.call = function(func){
-// 	func? func(this.greeting) : this.func(this.greeting);
-// };
-
-// var userFunc = function(greeting){
-// 	console.log(greeting);
-// };
-
-// var hello = new HelloFunc();
-// hello.func = userFunc;
-// hello.call();

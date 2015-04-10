@@ -3,15 +3,16 @@
 **/
 
 //1. 아래의 결과는 -1인가??
-function outer(){
-	
-	var x=0;
+function outter() {
+  var name = "Led Dong Uk";
 
-	return function(){
-		return ++x;
-	};
+  function inner() {
+    console.log(name);
+  }
+
+  return displayName;
 }
 
-var x = -1;
-var func = outer();
-console.log(func());
+var myFunc = outter();
+myFunc();
+
