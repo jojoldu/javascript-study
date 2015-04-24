@@ -19,15 +19,15 @@
 
 4. 다음 코드의 실행결과를 예측하시오. (3개다 맞춰야 정답)
 var a;
-console.log(a == undefined); 
-console.log(a == null);
-console.log(null == undefined);
+console.log(a == undefined);    //true
+console.log(a == null);         //true
+console.log(null == undefined); //true
 
 
 5. 다음 코드의 실행코드를 예측하시오.
- console.log(true && '이동욱');
- console.log('자바스크립트' && '스터디');
- console.log( 0 || '이동욱');
+ console.log(true && '이동욱');            //이동욱
+ console.log('자바스크립트' && '스터디');  //스터디
+ console.log( 0 || '이동욱');              //이동욱
 
 
 
@@ -41,17 +41,17 @@ console.log(null == undefined);
 
 7. 다음 코드의 실행결과를 예측하시오.
 
-console.log(add(5));
+console.log(add(5));      //10
 
 function add(x){
 	return x+x;
 
 }
-console.log(add);
+console.log(add);         //function add(){~}
 
 var add = 0;
 
-console.log(add);
+console.log(add);         //0
 
 
 8. 다음 (1), (2) 두 코드의 차이점을 설명하시오.
@@ -84,8 +84,8 @@ A.x=function() {
 var B = new A();
 var C = new A();
 
-B.x();
-C.x();
+B.x(); //hello
+C.x(); //hello
 
 11. 다음 코드의 실행결과를 예측하시오.
 var A = function () { };
@@ -101,8 +101,8 @@ A.prototype.x = function () {
 var B = new A();
 var C = new A();
 
-B.x();
-C.x();
+B.x();  //world
+C.x();  //world
 
 
 12. 콜백함수에 대해 설명하시오.
@@ -125,8 +125,8 @@ function add(x) {
 }
 
 var five = add(5);
-console.log(five(10));
-console.log(five(100));
+console.log(five(10));  //15
+console.log(five(100)); //105
 
 
 15. 다음의 코드를 수정하지 않고, 결과화면이 나올 수 있도록 코드를 추가하시오.
@@ -142,10 +142,16 @@ function Person(name){
 function Developer(name){
 	this.name = name;
 }
-
+Developer.prototype = new Person();
+Developer.prototype.coding = function(){
+    return "hello world";
+}
 var dev = new Developer('이동욱');
 console.log(dev.name);
 console.log(dev.introduce());
 console.log(dev.coding());
+
+
+
 **/
 
