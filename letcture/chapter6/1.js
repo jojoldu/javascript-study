@@ -32,5 +32,5 @@ mySon.setNewName("이동욱");
 console.log(mySon.name);
 
 
-
+console.log(7%2);
 
