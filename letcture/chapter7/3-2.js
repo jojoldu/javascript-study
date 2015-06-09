@@ -1,24 +1,29 @@
 /*
-	Javascript 내부함수를 활용
+	
+	3-2. 객체의 생성자를 호출하기 위한 call함수
+
 */
 
-var numbers = [5, 6, 2, 3, 7];
-
-
-var max = Math.max.apply(null, numbers); 
-
-var min = Math.min.apply(null, numbers);
-
-max = -Infinity, min = +Infinity;
-
-for (var i = 0; i < numbers.length; i++) {
-  if (numbers[i] > max) {
-    max = numbers[i];
-  }
-  if (numbers[i] < min) {
-    min = numbers[i];
-  }
+function Product(name, price){
+	this.name = name;
+	this.price = price;
 }
 
-console.log("max : " + max);
-console.log("min : " + min);
+function Food(name, price){
+	Product.call(this, name, price);
+	this.category = 'food';
+}
+
+function Toy(name, price){
+	Product.call(this, name, price);
+	this.category = 'toy';
+	this.site = 'www.disney.co.kr/';
+}
+
+var food = new Food('apple', 1000);
+var toy = new Toy('doll', 9000);
+
+console.log(food);
+console.log(toy);
+
+
