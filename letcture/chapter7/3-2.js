@@ -1,7 +1,7 @@
 /*
 	
-	3-2. 객체의 생성자를 호출하기 위한 call함수
-
+	3-2. call()과 apply()는 어디에 쓰는 것인가??
+	
 */
 
 function Product(name, price){
