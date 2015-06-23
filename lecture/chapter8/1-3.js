@@ -5,10 +5,10 @@
 **/
 
 // 1) concat
-var arr11 = ["a","b","c"];
-var arr12 = [1,2];
-var result1 = arr11.concat(arr12);
-console.log(result1);
+// var arr11 = ["a","b","c"];
+// var arr12 = [1,2];
+// var result1 = arr11.concat(arr12);
+// console.log(result1);
 
 
 
@@ -37,15 +37,12 @@ console.log(result1);
 // var q1 = ["a","b","c","d","e"];
 // var q2 = [1,2,3,4,5];
 
-
-
-
 // var r1 = q1.slice(2);
 // var r2 = q2.slice(1,4);
 
 // console.log(r1);
 // console.log(r2);
-// console.log(r1.concat(r2));  
+// console.log(r1.concat(r2).join());  
 
 
 
@@ -59,6 +56,7 @@ console.log(result1);
 // }
 // console.log(arr42);
 // var arr43 = arr41.push(1,2);
+// console.log(arr41);
 // console.log(arr43); //왜 6이 나오나???
 
 
@@ -71,5 +69,6 @@ console.log(arr51.sort());
 
 
 
-// 6) reverse
-console.log(arr51.reverse()); 
+// // 6) reverse
+var arr6 = arr51.reverse();
+console.log(arr6); 

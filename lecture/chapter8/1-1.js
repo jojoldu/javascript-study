@@ -16,5 +16,7 @@ array.push(new Member("이순신", 33));
 array.push(new Member("장보고", 42));
 
 for(var i=0;i<array.length;i++){
+	var mem = array[i];
+	console.log(mem.name);
 	console.log(array[i].name);
 }
