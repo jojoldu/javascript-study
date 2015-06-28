@@ -18,6 +18,22 @@ var Calculator = (function(){
 			counter = 0;
 			return counter;
 		},
-
+		decrement : function(){
+			return counter--;
+		},
+		show : function(){
+			console.log(counter);
+		}
 	}
 })();
+
+Calculator.show();
+Calculator.increment();
+Calculator.show();
+Calculator.decrement();
+Calculator.show();
+Calculator.decrement();
+Calculator.show();
+Calculator.reset();
+Calculator.show();
+
