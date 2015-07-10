@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10. form 이벤트</title>
+    <script>
+        function formFunc(event){
+            event = event || window.event;
+            alert('이벤트 발생');
+        }
+
+    </script>
+</head>
+<body>
+<h2>키를 입력해보자</h2>
+<br><br>
+<div>
+    <span> blur </span>
+    <input type = "text" onblur="formFunc(event)">
+</div>
+<br><br>
+<div>
+    <span> change </span>
+    <input type = "text" onchange = "formFunc(event)">
+</div>
+<br><br>
+<div>
+    <span> focus </span>
+    <input type = "text" onfocus = "formFunc(event)">
+</div>
+<br><br>
+<div>
+    <span> select </span>
+    <input type = "text" onselect = "formFunc(event)">
+</div>
+<br><br>
+</body>
+</html>

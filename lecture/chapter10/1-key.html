@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10. key이벤트</title>
+    <script>
+        function keyFunc(event){
+            event = event || window.event;
+            document.getElementById('output').innerHTML = event.keyCode;
+        }
+
+    </script>
+</head>
+<body>
+    <h2>숫자, @를 입력해보자</h2>
+    <div>
+        <span>입력값 : </span>
+        <span id = "output"></span>
+    </div>
+    <br><br>
+    <div>
+        <span> keydown </span>
+        <input type = "text" onkeydown = "keyFunc(event)">
+    </div>
+    <br><br>
+    <div>
+        <span> keypress </span>
+        <input type = "text" onkeypress = "keyFunc(event)">
+    </div>
+    <br><br>
+    <div>
+        <span> keyup </span>
+        <input type = "text" onkeyup = "keyFunc(event)">
+    </div>
+    <br><br>
+</body>
+</html>
